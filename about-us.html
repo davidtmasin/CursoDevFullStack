@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dev News">
+    <meta name="keywords" content="technology,development,news,computing,code">
+    <title>Institucional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        p {
+            line-height: 150%;
+        }
+
+        .divider {
+            margin: 5px 0;
+            border-color: #f5f5f5;
+        }
+
+        .container {
+            width: 1140px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        body>header {
+            background-color: #e7e6e6;
+            /* 0: black; F: white */
+        }
+
+        header .logo {
+            padding: 5px 0;
+        }
+
+        header .logo a {
+            font-family: 'Bebas Neue';
+            font-size: 120px;
+            color: #c91515;
+            display: block;
+        }
+
+        header a small {
+            font-size: 25px;
+            color: #666;
+            vertical-align: middle;
+        }
+
+        header #top-bar {
+            color: #343434;
+            background-color: #ccc;
+            text-align: center;
+            padding: 5px
+                /* top right bottom left */
+        }
+
+        header #top-bar a {
+            color: #c91515;
+        }
+
+        header nav {
+            background-color: #c91515;
+            text-align: center;
+        }
+
+        header .navbar {
+            list-style: none;
+        }
+
+        header .navbar .nav-item {
+            display: inline-block;
+        }
+
+        header nav .nav-link {
+            color: #fff;
+            margin-right: 15px;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        header nav .nav-link:last-child {
+            margin-right: 0;
+        }
+
+        header nav .nav-link:hover {
+            color: #444;
+            background-color: #f5f5f5;
+        }
+
+        header nav .nav-link.active {
+            color: #444;
+            background-color: #f5f5f5;
+        }
+
+        header nav .nav-link.active:hover {
+            background-color: #dedede;
+        }
+
+        /************/
+
+        section.content {
+            background-color: #efefef;
+            padding: 30px 0;
+        }
+
+        /**********/
+
+        h1 {
+            margin: 1rem 0 .5rem .5rem;
+            text-transform: uppercase;
+        }
+
+        hr {
+            margin-left: .5rem;
+            width: 20%;
+            height: 1px;
+            background: #c91515;
+        }
+
+        figure {
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        figure img {
+            margin: 0 0 0 1rem;
+            max-width: 50%;
+            border-radius: 10px;
+            border: 1px solid #000;
+        }
+
+        div ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        footer p {
+            margin: 0 0 1rem 0;
+        }
+
+        /********/
+
+        footer #bottom-bar {
+            color: #343434;
+            background-color: #ccc;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer #bottom-bar address {
+            font-weight: 500;
+        }
+
+        footer #bottom-bar a {
+            font-weight: bold;
+            color: #c91515;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="top-bar">
+            <strong>Contate-nos via Whatsapp:</strong> <a href="https://linkwhats.app/2e0e14">+55(85)989647993</a>
+        </div>
+        <div class="logo">
+            <div class="container">
+                <a href="/">Dev <small>The newspapper for developers</small></a>
+            </div>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="about-us.html">Institucional</a></li>
+                <li class="nav-item"><a class="nav-link" href="precos.html">Tabela de preços</a></li>
+                <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <div class="container">
+                <h1>Sobre nós</h1>
+                <hr>
+                <!-- <small>Conheça nosso trabalho</small> -->
+                <figure>
+                    <img src="arquivos/about-1.jpg" alt="Nossa empresa">
+                </figure>
+                <header>
+                    <h3>Conheça o índice do nosso livro</h3>
+                </header>
+                <div>
+                    <ol type="I">
+                        <li>Apresentação<sup>1</sup></li>
+                        <li>Dedicatória<sub>2</sub></li>
+                        <li>Prefácio</li>
+                        <li>Introdução</li>
+                        <li>Capítulo 1</li>
+                    </ol>
+                </div>
+                <footer>
+                    <p>Para mais detalhes, acesse a nossa <a href="galeria.html">galeria de fotos</a>.</p>
+                </footer>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="bottom-bar">
+            <address>Rua Dona Leopoldina, 1150, Centro, CEP: 60110-000, Fortaleza-CE</address>
+            <a href="mailto:davidteixeira.info@gmail.com.br&subject=Assunto do email">Contate-nos via e-mail</a>
+        </div>
+    </footer>
+</body>

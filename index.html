@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dev News">
+    <meta name="keywords" content="technology,development,news,computing,code">
+    <title>Dev News</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        p {
+            line-height: 150%;
+        }
+
+        .divider {
+            margin: 5px 0;
+            border-color: #f5f5f5;
+        }
+
+        .container {
+            width: 1140px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        body>header {
+            background-color: #e7e6e6;
+            /* 0: black; F: white */
+        }
+
+        header .logo {
+            padding: 5px 0;
+        }
+
+        header .logo a {
+            font-family: 'Bebas Neue';
+            font-size: 120px;
+            color: #c91515;
+            display: block;
+        }
+
+        header a small {
+            font-size: 25px;
+            color: #666;
+            vertical-align: middle;
+        }
+
+        header #top-bar {
+            color: #343434;
+            background-color: #ccc;
+            text-align: center;
+            padding: 5px
+                /* top right bottom left */
+        }
+
+        header #top-bar a {
+            color: #c91515;
+        }
+
+        header nav {
+            background-color: #c91515;
+            text-align: center;
+        }
+
+        header .navbar {
+            list-style: none;
+        }
+
+        header .navbar .nav-item {
+            display: inline-block;
+        }
+
+        header nav .nav-link {
+            color: #fff;
+            margin-right: 15px;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        header nav .nav-link:last-child {
+            margin-right: 0;
+        }
+
+        header nav .nav-link:hover {
+            color: #444;
+            background-color: #f5f5f5;
+        }
+
+        header nav .nav-link.active {
+            color: #444;
+            background-color: #f5f5f5;
+        }
+
+        header nav .nav-link.active:hover {
+            background-color: #dedede;
+        }
+
+        /********/
+
+        /* Section#title */
+        section#title {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        section#title h1 {
+            font-weight: 500;
+            font-size: 50px;
+        }
+
+        section#title h2 {
+            font-weight: 400;
+            font-size: 30px;
+        }
+
+        /********/
+
+        /* Section.content */
+        section.content {
+            background-color: #efefef;
+            padding: 30px 0;
+        }
+
+        section#list-news h3 {
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        section#list-news .publication-date {
+            font-size: 13px;
+            color: #444;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        section#list-news p {
+            color: #333;
+            margin-bottom: 12px
+        }
+
+        section#list-news p:last-child {
+            margin-bottom: 5px;
+        }
+
+        section#list-news a {
+            font-weight: 500;
+            color: #c91515;
+        }
+
+        section#list-news a:hover {
+            text-decoration: underline;
+        }
+
+        section#list-news .divider {
+            margin: 20px 0;
+        }
+
+        /********/
+
+        footer #bottom-bar {
+            color: #343434;
+            background-color: #ccc;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        footer #bottom-bar address{
+            font-weight: 500;
+        }
+        
+        footer #bottom-bar a {  font-weight: bold;
+            color: #c91515;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="top-bar">
+            <strong>Contate-nos via Whatsapp:</strong> <a href="https://linkwhats.app/2e0e14">+55(85)989647993</a>
+        </div>
+        <div class="logo">
+            <div class="container">
+                <a href="/">Dev <small>The newspapper for developers</small></a>
+            </div>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about-us.html">Institucional</a></li>
+                <li class="nav-item"><a class="nav-link" href="precos.html">Tabela de preços</a></li>
+                <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="title">
+            <h1>Últimas Notícias</h1>
+            <h2>Fique ligado nos destaques</h2>
+        </section>
+        <section class="content">
+            <div class="container">
+                <section id="list-news">
+                    <section>
+                        <header>
+                            <h3>Notícia 1</h3>
+                            <span class="publication-date">
+                                <strong>Publicação</strong> 02/12/2021 <span>21:10</span>
+                            </span>
+                        </header>
+                        <div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi molestiae maxime error sit
+                                in
+                                deleniti
+                                facere
+                                vero, laudantium saepe magni temporibus deserunt veniam beatae eligendi esse aliquid qui
+                                quia explicabo.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatibus pariatur
+                                blanditiis consequuntur aliquid adipisci, aperiam similique? Ullam, cupiditate? Et sint
+                                corporis blanditiis ipsa quia alias suscipit saepe unde porro?</p>
+                        </div>
+                        <footer>
+                            <a href="noticias/noticia.html" title="Leia a notícia na íntegra">Leia a notícia...</a>
+                            <hr class="divider">
+                        </footer>
+                    </section>
+                    <section>
+                        <header>
+                            <h3>Notícia 2</h3>
+                            <span class="publication-date"><strong>Publicação</strong> 02/12/2021
+                                <span>21:46</span></span>
+                        </header>
+                        <div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, quae quis nulla fugit
+                                repudiandae suscipit officiis velit itaque laboriosam atque iusto magni debitis vero
+                                nesciunt in fuga nisi possimus consequuntur?</p>
+                            <p>Eum labore necessitatibus odit dolorum autem nemo magnam quo laboriosam error doloribus,
+                                exercitationem perspiciatis animi quis vitae veniam fugiat quibusdam repudiandae
+                                consequuntur harum nihil rem omnis placeat a? Ipsa, officiis?</p>
+                        </div>
+                        <footer>
+                            <span><a href="noticias/noticia.html" title="Leia a notícia na íntegra">Leia a
+                                    notícia...</a></span>
+                            <hr class="divider">
+                        </footer>
+                    </section>
+                </section>
+                <section id="comments">
+                    <p>
+                        <!-- tag b = bold (negrito) -->
+                        Lorem ipsum dolor <b>sit amet consectetur</b> adipisicing elit.<br>
+                        Optio numquam <strong>temporibus quod itaque delectus</strong> facere enim nostrum quisquam
+                        dignissimos
+                        laborum
+                        maiores perferendis praesentium est tempora velit, sunt eveniet sint veritatis.
+                    </p>
+                    <p>
+                        <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, possimus fugiat quod
+                            culpa,</i><br>
+                        hic, explicabo iste ad nemo repudiandae voluptatibus ipsam! Sit, officiis. Corrupti facilis fuga
+                        at
+                        molestias
+                        eum nesciunt!
+                        <br>
+                        <cite>Citação</cite>
+                    </p>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="bottom-bar">
+            <address>Rua Dona Leopoldina, 1150, Centro, CEP: 60110-000, Fortaleza-CE</address>
+            <a href="mailto:davidteixeira.info@gmail.com.br&subject=Assunto do email">Contate-nos via e-mail</a>
+        </div>
+    </footer>
+</body>
+
+</html>

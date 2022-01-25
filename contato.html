@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale conosco</title>
+</head>
+
+<body style="background-color: #eee;">
+    <header style="background-color: lightgray;">
+        <div id="top-bar" style="background-color: gray"><strong>Entre em contato conosco:</strong> <a
+                href="tel:+558599894984">8599894984</a></div>
+        <nav style="background-color: lightsalmon;">
+            <a href="index.html">Home</a>
+            <a href="about-us.html">Sobre nós</a>
+            <a href="contact.html">Entre em contato</a>
+            <a href="precos.html">Tabela de preços</a>
+            <a href="contato.html">Fale conosco</a>
+        </nav>
+        <div>
+            <form action="" method="get">
+                <input type="search" name="search" id="search" placeholder="Procurar...">
+            </form>
+        </div>
+        <h1>Fale conosco</h1>
+        <h2>Entre em contato com a nossa equipe e logo retornaremos</h2>
+    </header>
+    <main>
+        <section id="content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.0069989659173!2d-9.095930185561965!3d38.76354347959151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193183750e5809%3A0x983f2e673a62e130!2sOcean%C3%A1rio%20de%20Lisboa!5e0!3m2!1spt-BR!2spt!4v1642030522801!5m2!1spt-BR!2spt" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <form method="get" action="">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone">
+                    </div>
+                    <div>
+                        <p><strong>Assunto</strong></p>
+                        <div>
+                            <input type="radio" name="assunto" id="contato" value="contato" checked>
+                            <label for="contato">Contato</label>
+                            <input type="radio" name="assunto" id="financeiro" value="financeiro">
+                            <label for="financeiro">Financeiro</label>
+                            <input type="radio" name="assunto" id="vendas" value="vendas">
+                            <label for="vendas">Vendas</label>
+                        </div>
+                    </div>
+                    <div>
+                        <p><strong>Como nos conheceu</strong></p>
+                        <div>
+                            <label for="como_conheceu_web">Web</label>
+                            <input type="checkbox" name="como_conheceu[]" id="como_conheceu_web" value="web">
+                            <label for="como_conheceu_email">Email</label>
+                            <input type="checkbox" name="como_conheceu[]" id="como_conheceu_email" value="email">
+                        </div>
+                    </div>
+                    <div>
+                        <textarea name="mensagem" id="mensagem" cols="50" rows="10" placeholder="Digite sua mensagem" wrap="soft"></textarea>
+                    </div>
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
