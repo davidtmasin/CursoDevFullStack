@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="style-collapse.css">
     <style>
         * {
             margin: 0;
@@ -174,6 +175,34 @@
         }
 
         /********/
+        #titleGallery{
+            text-align: center;
+            margin: 0 0 2rem 0;
+            text-transform: uppercase;
+        }
+
+
+        #gallery {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            /* align-items: center; */
+        }
+
+        #gallery figure img {
+            width: 250px;
+            height: 180px;
+            border: 2px solid #000;
+            border-radius: 10px;
+        }
+
+        #gallery figure figcaption {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        /*******/
 
         footer #bottom-bar {
             color: #343434;
@@ -182,15 +211,15 @@
             display: flex;
             justify-content: space-around;
         }
-        
-        footer #bottom-bar address{
+
+        footer #bottom-bar address {
             font-weight: 500;
         }
-        
-        footer #bottom-bar a {  font-weight: bold;
+
+        footer #bottom-bar a {
+            font-weight: bold;
             color: #c91515;
         }
-
     </style>
 </head>
 
@@ -224,69 +253,132 @@
                 <section id="list-news">
                     <section>
                         <header>
-                            <h3>Notícia 1</h3>
+                            <h3>Hackers do grupo Anonymous invadem o sistema do Pentágono usando HTML5</h3>
                             <span class="publication-date">
-                                <strong>Publicação</strong> 02/12/2021 <span>21:10</span>
+                                <strong>Publicação</strong> 26/01/2022 <span>16:50</span>
                             </span>
                         </header>
                         <div>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi molestiae maxime error sit
-                                in
-                                deleniti
-                                facere
-                                vero, laudantium saepe magni temporibus deserunt veniam beatae eligendi esse aliquid qui
-                                quia explicabo.
-                            </p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatibus pariatur
-                                blanditiis consequuntur aliquid adipisci, aperiam similique? Ullam, cupiditate? Et sint
-                                corporis blanditiis ipsa quia alias suscipit saepe unde porro?</p>
+                            <details class="collapse">
+                                <summary class="title">Leia a notícia</summary>
+                                <p class="description">
+                                    Por conseguinte, a criticidade dos dados em questão causa uma diminuição do
+                                    throughput das ACLs de segurança impostas pelo firewall. Todas estas questões,
+                                    devidamente ponderadas, levantam dúvidas sobre se o comprometimento entre as equipes
+                                    de implantação inviabiliza a implantação do fluxo de informações. No mundo atual, a
+                                    lógica proposicional cumpre um papel essencial na implantação da rede privada. É
+                                    importante questionar o quanto o índice de utilização do sistema implica na melhor
+                                    utilização dos links de dados do bloqueio de portas imposto pelas redes
+                                    corporativas.
+                                </p>
+                                <p class="description">
+                                    O incentivo ao avanço tecnológico, assim como o aumento significativo da velocidade
+                                    dos links de Internet afeta positivamente o correto provisionamento dos procolos
+                                    comumente utilizados em redes legadas. Podemos já vislumbrar o modo pelo qual a
+                                    preocupação com a TI verde auxilia no aumento da segurança e/ou na mitigação dos
+                                    problemas da confidencialidade imposta pelo sistema de senhas. Nunca é demais
+                                    lembrar o impacto destas possíveis vulnerabilidades, uma vez que o desenvolvimento
+                                    contínuo de distintas formas de codificação causa impacto indireto no tempo médio de
+                                    acesso da garantia da disponibilidade. As experiências acumuladas demonstram que o
+                                    uso de servidores em datacenter exige o upgrade e a atualização do impacto de uma
+                                    parada total.
+                                </p>
+                            </details>
                         </div>
                         <footer>
-                            <a href="noticias/noticia.html" title="Leia a notícia na íntegra">Leia a notícia...</a>
                             <hr class="divider">
                         </footer>
                     </section>
                     <section>
                         <header>
-                            <h3>Notícia 2</h3>
-                            <span class="publication-date"><strong>Publicação</strong> 02/12/2021
+                            <h3>Aprenda a programar códigos eficientes em HMTL5</h3>
+                            <span class="publication-date"><strong>Publicação</strong> 20/01/2022
                                 <span>21:46</span></span>
                         </header>
                         <div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, quae quis nulla fugit
-                                repudiandae suscipit officiis velit itaque laboriosam atque iusto magni debitis vero
-                                nesciunt in fuga nisi possimus consequuntur?</p>
-                            <p>Eum labore necessitatibus odit dolorum autem nemo magnam quo laboriosam error doloribus,
-                                exercitationem perspiciatis animi quis vitae veniam fugiat quibusdam repudiandae
-                                consequuntur harum nihil rem omnis placeat a? Ipsa, officiis?</p>
+                            <details class="collapse">
+                                <summary class="title">Leia a notícia</summary>
+                                <p class="description">
+                                    O que temos que ter sempre em mente é que a complexidade computacional conduz a um
+                                    melhor balancemanto de carga dos problemas de segurança escondidos que existem nos
+                                    sistemas operacionais proprietários. Enfatiza-se que a necessidade de cumprimento
+                                    dos SLAs previamente acordados talvez venha causar instabilidade de todos os
+                                    recursos funcionais envolvidos. Neste sentido, o crescente aumento da densidade de
+                                    bytes das mídias é um ativo de TI de alternativas aos aplicativos convencionais.
+                                <p class="description">
+                                    Assim mesmo, a adoção de políticas de segurança da informação minimiza o gasto de
+                                    energia da gestão de risco. O empenho em analisar a revolução que trouxe o software
+                                    livre não pode mais se dissociar da terceirização dos serviços. Por outro lado, o
+                                    entendimento dos fluxos de processamento possibilita uma melhor disponibilidade do
+                                    levantamento das variáveis envolvidas.
+                                </p>
+                            </details>
                         </div>
                         <footer>
-                            <span><a href="noticias/noticia.html" title="Leia a notícia na íntegra">Leia a
-                                    notícia...</a></span>
+                            <hr class="divider">
+                        </footer>
+                    </section>
+                    <section>
+                        <header>
+                            <h3>Como invadir a DeepWeb</h3>
+                            <span class="publication-date"><strong>Publicação</strong> 20/01/2022
+                                <span>21:46</span></span>
+                        </header>
+                        <div>
+                            <details class="collapse">
+                                <summary class="title">Leia a notícia</summary>
+                                <p class="description">
+                                    Acima de tudo, é fundamental ressaltar que a utilização de recursos de hardware
+                                    dedicados garante a integridade dos dados envolvidos dos índices pretendidos.
+                                    Considerando que temos bons administradores de rede, a constante divulgação das
+                                    informações acarreta um processo de reformulação e modernização das formas de ação.
+                                    Percebemos, cada vez mais, que a interoperabilidade de hardware estende a
+                                    funcionalidade da aplicação dos paralelismos em potencial. No entanto, não podemos
+                                    esquecer que o novo modelo computacional aqui preconizado ainda não demonstrou
+                                    convincentemente que está estável o suficiente das ferramentas OpenSource.
+                                </p>
+                                <p class="description">
+                                    Pensando mais a longo prazo, a lei de Moore imponha um obstáculo ao upgrade para
+                                    novas versões do sistema de monitoramento corporativo. Ainda assim, existem dúvidas
+                                    a respeito de como a alta necessidade de integridade assume importantes níveis de
+                                    uptime das janelas de tempo disponíveis. Não obstante, a disponibilização de
+                                    ambientes facilita a criação dos equipamentos pré-especificados. A certificação de
+                                    metodologias que nos auxiliam a lidar com a implementação do código agrega valor ao
+                                    serviço prestado da utilização dos serviços nas nuvens.
+                                </p>
+                            </details>
+                        </div>
+                        <footer>
                             <hr class="divider">
                         </footer>
                     </section>
                 </section>
-                <section id="comments">
-                    <p>
-                        <!-- tag b = bold (negrito) -->
-                        Lorem ipsum dolor <b>sit amet consectetur</b> adipisicing elit.<br>
-                        Optio numquam <strong>temporibus quod itaque delectus</strong> facere enim nostrum quisquam
-                        dignissimos
-                        laborum
-                        maiores perferendis praesentium est tempora velit, sunt eveniet sint veritatis.
-                    </p>
-                    <p>
-                        <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, possimus fugiat quod
-                            culpa,</i><br>
-                        hic, explicabo iste ad nemo repudiandae voluptatibus ipsam! Sit, officiis. Corrupti facilis fuga
-                        at
-                        molestias
-                        eum nesciunt!
-                        <br>
-                        <cite>Citação</cite>
-                    </p>
+                <h2 id="titleGallery">Galeria de notícias</h2>
+                <section id="gallery">
+                    <figure>
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+                            <img src="https://andrehost.com.br/wp-content/uploads/2016/05/o-que-e-o-html5.jpg" alt="html5">
+                        </a>
+                        <figcaption>HTML5</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQamfvdR-i_CLuozHw9RdnvziVioZv-eD_-dQ&usqp=CAU" alt="css3">
+                        </a>
+                        <figcaption>CSS3</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
+                            <img src="https://sujeitoprogramador.com/wp-content/uploads/2019/08/jsjsjs.png" alt="javascript">
+                        </a>
+                        <figcaption>JS</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
+                            <img src="https://www.bamboohr.com/blog/wp-content/uploads/Employee_Development_Plans_4_Winning_Steps_to_Engage_Employees700x525.png" alt="development">
+                        </a>
+                        <figcaption>Development</figcaption>
+                    </figure>
                 </section>
             </div>
         </section>

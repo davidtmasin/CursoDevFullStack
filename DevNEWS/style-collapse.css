@@ -1,0 +1,72 @@
+:root {
+    --space-xxs: 4px;
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space: 24px;
+    --space-md: 32px;
+    --space-lg: 48px;
+    --space-xlg: 64px;
+    --screen-sm: 768px;
+    --gray: #555;
+    --gray-dark: #333;
+    --gray-darker: #111;
+    --gray-light: #f1f1f1;
+    --gray-lighter: #fafafa;
+    --blue: #187888;
+    --yellow: #e6af05;
+    --white: #fff;
+    --black: #000;
+    --brand-primary: var(--blue);
+    --background: var(--white);
+    --text-color: var(--gray-darker);
+}
+details summary {
+    list-style: none;
+}
+.collapse {
+    border: solid 1px var(--gray-darker);
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    background-color: rgb(255, 207, 204);
+    transition: background-color 0.25s;
+    will-change: background-color;
+}
+.collapse:first-child {
+    margin-top: var(--space);
+}
+.collapse:not(:last-child) {
+    margin-bottom: var(--space-sm);
+}
+.collapse:hover {
+    background-color: var(--gray-lighter);
+}
+.collapse:hover .title:after {
+    content: "🙂";
+}
+.collapse[open] .title:after {
+    content: "😍";
+}
+.title {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: var(--space-sm);
+    position: relative;
+}
+.title:after {
+    content: "😴";
+    position: absolute;
+    right: var(--space-sm);
+    transform: translatey(-50%);
+    top: 50%;
+}
+.description {
+    border-top: var(--gray-light) solid 1px;
+    font-size: 14px;
+    line-height: 21px;
+    padding: var(--space-sm);
+}
