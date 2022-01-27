@@ -14,6 +14,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style-collapse.css">
+    <script>
+        
+        function fslide1() {
+            console.log("entrou no slide1");
+            document.getElementById('slide1').checked = true
+            setTimeout(() => { fslide2() }, 5000)
+        }
+        function fslide2() {
+            console.log("entrou no slide2");
+            document.getElementById('slide2').checked = true
+            setTimeout(() => { fslide3() }, 5000)
+        }
+
+        function fslide3() {
+            console.log("entrou no slide3");
+            document.getElementById('slide3').checked = true
+            setTimeout(() => {fslide4()}, 5000)
+        }
+
+        function fslide4(){
+            console.log("entrou no slide4");
+            document.getElementById('slide4').checked = true
+            setTimeout(() => {fslide1()}, 5000)
+        }
+
+    </script>
+
     <style>
         * {
             margin: 0;
@@ -288,8 +315,8 @@
             transition: all .5s;
         }
 
-        
-        .slider li input:checked~img {   
+
+        .slider li input:checked~img {
             opacity: 1;
             visibility: visible;
             z-index: 10;
@@ -301,9 +328,10 @@
 
         /********/
     </style>
+
 </head>
 
-<body>
+<body onload="fslide1()">
     <header>
         <div id="top-bar">
             <strong>Contate-nos via Whatsapp:</strong> <a href="https://linkwhats.app/2e0e14">+55(85)989647993</a>
@@ -466,30 +494,29 @@
                     </figure>
 
                 </section> -->
-                <ul class="slider">
-                    <li>
+                <ul class="slider" id="listaSlider">
+                    <li class="itemSlider">
                         <input type="radio" id="slide1" name="slide" checked>
-                        <label for="slide1"></label>
+                        <label for="slide1" class="teste"></label>
                         <img src="https://andrehost.com.br/wp-content/uploads/2016/05/o-que-e-o-html5.jpg" alt="HTML">
                     </li>
-                    <li>
-                        <input type="radio" id="slide2" name="slide" >
+                    <li class="itemSlider">
+                        <input type="radio" id="slide2" name="slide">
                         <label for="slide2"></label>
-                        <img src="https://miro.medium.com/max/600/1*OFsc0SD55jhi8cjo7aCA4w.jpeg"
-                            alt="CSS">
+                        <img src="https://miro.medium.com/max/600/1*OFsc0SD55jhi8cjo7aCA4w.jpeg" alt="CSS">
 
                     </li>
-                    <li>
-                        <input type="radio" id="slide3" name="slide" >
+                    <li class="itemSlider">
+                        <input type="radio" id="slide3" name="slide">
                         <label for="slide3"></label>
-                        <img src="https://sujeitoprogramador.com/wp-content/uploads/2019/08/jsjsjs.png" alt="Javascript">
+                        <img src="https://sujeitoprogramador.com/wp-content/uploads/2019/08/jsjsjs.png"
+                            alt="Javascript">
 
                     </li>
-                    <li>
-                        <input type="radio" id="slide4" name="slide" >
+                    <li class="itemSlider">
+                        <input type="radio" id="slide4" name="slide">
                         <label for="slide4"></label>
-                        <img src="https://hackernoon.com/hn-images/1*iQxt6dphgZWVS5MeZROfWw.jpeg"
-                            alt="Developers">
+                        <img src="https://hackernoon.com/hn-images/1*iQxt6dphgZWVS5MeZROfWw.jpeg" alt="Developers">
 
                     </li>
                 </ul>
@@ -502,5 +529,7 @@
             <a href="mailto:davidteixeira.info@gmail.com.br&subject=Assunto do email">Contate-nos via e-mail</a>
         </div>
     </footer>
+    <!-- <script src="test.js"></script> -->
 </body>
+
 </html>
