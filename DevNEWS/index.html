@@ -175,7 +175,7 @@
         }
 
         /********/
-        #titleGallery{
+        #titleGallery {
             text-align: center;
             margin: 0 0 2rem 0;
             text-transform: uppercase;
@@ -220,6 +220,87 @@
             font-weight: bold;
             color: #c91515;
         }
+
+        /*********/
+
+        .slider {
+            display: block;
+            margin: 0 auto;
+            height: 293px;
+            width: 600px;
+            margin: auto 390px;
+            position: relative;
+
+        }
+
+        .slider li {
+            list-style: none;
+            position: absolute;
+        }
+
+        .slider img {
+            border: 1px solid #000;
+            border-radius: 10px;
+            margin: auto;
+            height: 280px;
+            width: 350px;
+            vertical-align: top;
+        }
+
+        .slider input {
+            display: none;
+        }
+
+        .slider label {
+            background-color: #c91515;
+            bottom: 10px;
+            cursor: pointer;
+            display: block;
+            height: 15px;
+            width: 15px;
+            position: absolute;
+            z-index: 10;
+            transition: background-color ease .5s;
+        }
+
+        .slider label:hover {
+            background-color: #c3c3c3;
+        }
+
+        .slider li:nth-child(1) label {
+            left: 10px;
+        }
+
+        .slider li:nth-child(2) label {
+            left: 40px;
+        }
+
+        .slider li:nth-child(3) label {
+            left: 70px;
+        }
+
+        .slider li:nth-child(4) label {
+            left: 100px;
+        }
+
+        .slider img {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 1s;
+        }
+
+        
+        .slider li input:checked~img {   
+            opacity: 1;
+            visibility: visible;
+            z-index: 10;
+        }
+
+        .slider li input:checked~label {
+            background: #d7d7d7;
+        }
+
+        /********/
     </style>
 </head>
 
@@ -354,32 +435,65 @@
                     </section>
                 </section>
                 <h2 id="titleGallery">Galeria de notícias</h2>
-                <section id="gallery">
+
+                <!-- <section id="gallery">
+
                     <figure>
                         <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
                             <img src="https://andrehost.com.br/wp-content/uploads/2016/05/o-que-e-o-html5.jpg" alt="html5">
                         </a>
                         <figcaption>HTML5</figcaption>
                     </figure>
+
                     <figure>
                         <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQamfvdR-i_CLuozHw9RdnvziVioZv-eD_-dQ&usqp=CAU" alt="css3">
                         </a>
                         <figcaption>CSS3</figcaption>
                     </figure>
+
                     <figure>
                         <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
                             <img src="https://sujeitoprogramador.com/wp-content/uploads/2019/08/jsjsjs.png" alt="javascript">
                         </a>
                         <figcaption>JS</figcaption>
                     </figure>
+
                     <figure>
                         <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
                             <img src="https://www.bamboohr.com/blog/wp-content/uploads/Employee_Development_Plans_4_Winning_Steps_to_Engage_Employees700x525.png" alt="development">
                         </a>
                         <figcaption>Development</figcaption>
                     </figure>
-                </section>
+
+                </section> -->
+                <ul class="slider">
+                    <li>
+                        <input type="radio" id="slide1" name="slide" checked>
+                        <label for="slide1"></label>
+                        <img src="https://andrehost.com.br/wp-content/uploads/2016/05/o-que-e-o-html5.jpg" alt="">
+                    </li>
+                    <li>
+                        <input type="radio" id="slide2" name="slide" >
+                        <label for="slide2"></label>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQamfvdR-i_CLuozHw9RdnvziVioZv-eD_-dQ&usqp=CAU"
+                            alt="">
+
+                    </li>
+                    <li>
+                        <input type="radio" id="slide3" name="slide" >
+                        <label for="slide3"></label>
+                        <img src="https://sujeitoprogramador.com/wp-content/uploads/2019/08/jsjsjs.png" alt="">
+
+                    </li>
+                    <li>
+                        <input type="radio" id="slide4" name="slide" >
+                        <label for="slide4"></label>
+                        <img src="https://www.bamboohr.com/blog/wp-content/uploads/Employee_Development_Plans_4_Winning_Steps_to_Engage_Employees700x525.png"
+                            alt="">
+
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
@@ -390,5 +504,4 @@
         </div>
     </footer>
 </body>
-
 </html>
