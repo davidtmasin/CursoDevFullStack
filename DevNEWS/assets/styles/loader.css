@@ -80,4 +80,5 @@
 
   #containerGhost {
     visibility: hidden;
+    opacity: 0;
   }

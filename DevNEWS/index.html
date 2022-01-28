@@ -42,10 +42,12 @@
         }
 
         /****/
-        function startingLoader(){
+        function startingLoader() {
             setTimeout(() => {
                 loading.style.visibility = 'hidden'
                 containerGhost.style.visibility = 'visible'
+                containerGhost.style.opacity = 1
+
             }, 3500)
         }
         startingLoader()
@@ -262,7 +264,9 @@
 
         /*********/
 
+
         .slider {
+
             display: block;
             margin: 0 auto;
             height: 293px;
@@ -367,14 +371,18 @@
                 </ul>
             </nav>
         </header>
+
         <main>
 
             <section id="title">
                 <h1>Últimas Notícias</h1>
                 <h2>Fique ligado nos destaques</h2>
             </section>
+
             <section class="content">
+
                 <div class="container">
+
                     <section id="list-news">
                         <section>
                             <header>
@@ -500,39 +508,9 @@
                             </footer>
                         </section>
                     </section>
+
                     <h2 id="titleGallery">Galeria de notícias</h2>
 
-                    <!-- <section id="gallery">
-
-                    <figure>
-                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
-                            <img src="https://andrehost.com.br/wp-content/uploads/2016/05/o-que-e-o-html5.jpg" alt="html5">
-                        </a>
-                        <figcaption>HTML5</figcaption>
-                    </figure>
-
-                    <figure>
-                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQamfvdR-i_CLuozHw9RdnvziVioZv-eD_-dQ&usqp=CAU" alt="css3">
-                        </a>
-                        <figcaption>CSS3</figcaption>
-                    </figure>
-
-                    <figure>
-                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
-                            <img src="https://sujeitoprogramador.com/wp-content/uploads/2019/08/jsjsjs.png" alt="javascript">
-                        </a>
-                        <figcaption>JS</figcaption>
-                    </figure>
-
-                    <figure>
-                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
-                            <img src="https://www.bamboohr.com/blog/wp-content/uploads/Employee_Development_Plans_4_Winning_Steps_to_Engage_Employees700x525.png" alt="development">
-                        </a>
-                        <figcaption>Development</figcaption>
-                    </figure>
-
-                </section> -->
                     <ul class="slider" id="listaSlider">
                         <li class="itemSlider">
                             <input type="radio" id="slide1" name="slide" checked>
@@ -560,15 +538,20 @@
 
                         </li>
                     </ul>
+
                 </div>
+
             </section>
+
         </main>
+
         <footer>
             <div id="bottom-bar">
                 <address>Rua Dona Leopoldina, 1150, Centro, CEP: 60110-000, Fortaleza-CE</address>
                 <a href="mailto:davidteixeira.info@gmail.com.br&subject=Assunto do email">Contate-nos via e-mail</a>
             </div>
         </footer>
+
     </div>
     <!-- <script src="test.js"></script> -->
 </body>
